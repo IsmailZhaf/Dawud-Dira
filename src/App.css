@@ -1190,15 +1190,9 @@ section {
   opacity: 0.5;
 }
 
-/* .signature {
-  font-family: var(--font-serif);
-  font-size: 3.5rem;
-  font-weight: 300;
-  color: var(--text-white);
-  margin-bottom: 1rem;
-  font-style: italic;
-  opacity: 0.9;
-} */
+.signature {
+  font-size: 20px;
+}
 
 .credit {
   margin-top: 20rem;
