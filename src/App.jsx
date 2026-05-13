@@ -7,7 +7,7 @@ import { SectionRSVP } from "./components/SectionRSVP"
 const App = () => {
   const [isOpened, setIsOpened] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [guestName, setGuestName] = useState('Ismail dan Partner');
+  const [guestName, setGuestName] = useState('');
   const [showMain, setShowMain] = useState(false);
   const audioRef = React.useRef(null);
 
