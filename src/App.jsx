@@ -538,7 +538,7 @@ const SectionEvent = () => (
           <div className="event-info">
             <p className="date">Sabtu, 06 Juni 2026</p>
             <p className="time">09.00 - 11.00 WIB</p>
-            <p className="venue">Gedung Serbaguna Peruri</p>
+            <p className="venue">Gedung Pertemuan Duta Sinar Berkah</p>
             <p className="address">Jl. H.Mencong No.24, RT.003/RW.013, Sudimara Tim., Kec. Ciledug, Kota Tangerang, Banten 15151</p>
           </div>
           <a

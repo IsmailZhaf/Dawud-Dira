@@ -118,7 +118,7 @@
 .bottom-section {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 3px;
 }
 
 .cover-date-top {
@@ -143,7 +143,7 @@
 .wedding-of {
   letter-spacing: 0.2em;
   font-size: 12px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   font-family: var(--font-body);
   opacity: 0.8;
 }
@@ -1178,19 +1178,20 @@ section {
 }
 
 .section-footer {
-  padding: 150px 20px;
+  padding: 100px 20px;
   background: rgba(0, 0, 0, 0.2);
 }
 
 .final-label {
   letter-spacing: 0.6em;
   font-size: 0.8rem;
+  margin-top: 10rem;
   margin-bottom: 2rem;
   opacity: 0.6;
 }
 
 .credit {
-  margin-top: 4rem;
+  margin-top: 20rem;
   font-size: 0.65rem;
   letter-spacing: 0.2em;
   opacity: 0.4;
