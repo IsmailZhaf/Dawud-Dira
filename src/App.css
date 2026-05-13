@@ -1183,10 +1183,10 @@ section {
 }
 
 .final-label {
-  letter-spacing: 0.6em;
-  font-size: 0.75rem;
-  margin-top: 10rem;
-  margin-bottom: 2rem;
+  letter-spacing: 0.5em;
+  font-size: 1.4rem;
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
   opacity: 0.5;
 }
 
@@ -1201,7 +1201,7 @@ section {
 } */
 
 .credit {
-  margin-top: 15rem;
+  margin-top: 20rem;
   font-size: 0.65rem;
   letter-spacing: 0.15em;
   opacity: 0.5;

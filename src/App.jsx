@@ -539,7 +539,7 @@ const SectionEvent = () => (
             <p className="date">Sabtu, 06 Juni 2026</p>
             <p className="time">09.00 - 11.00 WIB</p>
             <p className="venue">Gedung Pertemuan Duta Sinar Berkah</p>
-            <p className="address">Jl. H.Mencong No.24, RT.003/RW.013, Sudimara Tim., Kec. Ciledug, Kota Tangerang, Banten 15151</p>
+            <p className="address">Jl. Dr Cipto Mangunkusumo No. 24 (H Mencong) Kel. Sudimara Timur, Kec. Ciledug, Kota Tangerang, Banten.</p>
           </div>
           <a
             className="map-button"
@@ -563,8 +563,8 @@ const SectionEvent = () => (
           <div className="event-info">
             <p className="date">Sabtu, 06 Juni 2026</p>
             <p className="time">12.00 - 15.00 WIB</p>
-            <p className="venue">Gedung Serbaguna Peruri</p>
-            <p className="address">Jl. H.Mencong No.24, RT.003/RW.013, Sudimara Tim., Kec. Ciledug, Kota Tangerang, Banten 15151</p>
+            <p className="venue">Gedung Pertemuan Duta Sinar Berkah</p>
+            <p className="address">Jl. Dr Cipto Mangunkusumo No. 24 (H Mencong) Kel. Sudimara Timur, Kec. Ciledug, Kota Tangerang, Banten.</p>
           </div>
           <a
             className="map-button"
@@ -736,7 +736,7 @@ const SectionFooter = () => (
         transition={{ duration: 1.5 }}
         className="footer-content"
       >
-        <p className="final-label">TERIMA KASIH</p>
+        <p className="final-label">THANK YOU</p>
         <h2 className="signature">Dawud & Dira</h2>
 
         <div className="credit">
