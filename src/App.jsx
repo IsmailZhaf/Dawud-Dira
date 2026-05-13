@@ -86,7 +86,7 @@ const App = () => {
                   transition={{ duration: 2, delay: 2.25 }}
                   className="couple-names"
                 >
-                  Dawud & Dira
+                  Dawud <span className="banner-ampersand">&amp;</span> Dira
                 </motion.h1>
               </div>
 
@@ -351,7 +351,7 @@ const SectionHome = () => (
 
         <p className="label-wedding">THE WEDDING OF</p>
 
-        <h2 className="main-names">Dawud & <br /> Dira</h2>
+        <h2 className="main-names">Dawud <span className="banner-ampersand">&amp;</span> <br /> Dira</h2>
       </motion.div>
 
       <motion.div
@@ -738,7 +738,7 @@ const SectionFooter = () => (
       >
         <p className="final-label">TERIMA KASIH</p>
         <h2 className="signature">Dawud & Dira</h2>
-        
+
         <div className="credit">
           <span>Created by</span>
           <a href="https://instagram.com/ismailzhfr" target="_blank" rel="noopener noreferrer">
