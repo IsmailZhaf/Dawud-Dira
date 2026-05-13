@@ -1178,24 +1178,56 @@ section {
 }
 
 .section-footer {
-  padding: 100px 20px;
-  background: rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 80px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .final-label {
   letter-spacing: 0.6em;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   margin-top: 10rem;
   margin-bottom: 2rem;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
+/* .signature {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+} */
+
 .credit {
-  margin-top: 20rem;
+  margin-top: 15rem;
   font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  opacity: 0.4;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.credit a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-gold);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  border-bottom: 1px solid rgba(206, 156, 60, 0.1);
+  padding-bottom: 2px;
+}
+
+.credit a:hover {
+  opacity: 1;
+  border-bottom-color: var(--accent-gold);
+  letter-spacing: 0.25em;
 }
 
 /* Controls */

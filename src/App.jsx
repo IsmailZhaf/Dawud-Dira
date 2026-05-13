@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, delay } from 'framer-motion';
-import { Calendar, MapPin, Gift, MessageCircle, Music, Pause, Play, ChevronDown, AlignRight, X, Heart, MessageSquare, Home, ArrowRight } from 'lucide-react';
+import { Calendar, MapPin, Gift, MessageCircle, Music, Pause, Play, ChevronDown, AlignRight, X, Heart, MessageSquare, Home, ArrowRight, Instagram } from 'lucide-react';
 import './App.css';
 import { SectionRSVP } from "./components/SectionRSVP"
 
@@ -730,14 +730,22 @@ const SectionFooter = () => (
   <section className="section-footer">
     <div className="container">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
         className="footer-content"
       >
         <p className="final-label">TERIMA KASIH</p>
         <h2 className="signature">Dawud & Dira</h2>
-        <div className="credit">Created by Ismail Zhanfeari</div>
+        
+        <div className="credit">
+          <span>Created by</span>
+          <a href="https://instagram.com/ismailzhfr" target="_blank" rel="noopener noreferrer">
+            <Instagram size={12} strokeWidth={1.5} />
+            Ismail Zhanfeari
+          </a>
+        </div>
       </motion.div>
     </div>
   </section>
