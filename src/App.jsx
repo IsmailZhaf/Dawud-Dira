@@ -97,7 +97,7 @@ const App = () => {
                   transition={{ duration: 2, delay: 2.75 }}
                   className="guest-info"
                 >
-                  <p className="to-label">KEPADA</p>
+                  <p className="to-label">Yth. Bapak/Ibu/Sudara/i</p>
 
                   <h2 className="guest-name">{guestName}</h2>
 
@@ -386,6 +386,7 @@ const SectionGroom = () => (
       >
         <p className="label">THE GROOM</p>
         <h2 className="name">Dawud</h2>
+        <p className='full-name'>Dawud Al Ubaidah, S.Ars.</p>
         <div className="divider" />
         <p className="parent-label">Putra Pertama Dari</p>
         <p className="parents-groom">Bapak H. Suyanto & Ibu Tukiningsih</p>
@@ -407,9 +408,10 @@ const SectionBride = () => (
       >
         <p className="label">THE BRIDE</p>
         <h2 className="name">Dira</h2>
+        <p className='full-name'>Adira Fadhla Ramadhani, S.M.</p>
         <div className="divider" />
         <p className="parent-label">Putri Kedua Dari</p>
-        <p className="parents-bride">Bapak  & Ibu </p>
+        <p className="parents-bride">Bapak H. Wijiyanto & Ibu Wahyuni </p>
         <a href="https://instagram.com/dirafdhla" target="_blank" className="insta-btn">@dirafdhla</a>
       </motion.div>
     </div>
@@ -421,17 +423,17 @@ const SectionStory = () => {
     {
       chapter: 'CHAPTER ONE',
       title: 'Awal Bertemu',
-      text: 'Pada tahun 2020, di tengah hiruk-pikuk dunia kepengurusan himpunan arsitektur, kami mulai saling mengenal, seperti dua garis yang bersinggungan tanpa sengaja. Saat itu, kami dalam rutinitas, sibuk dengan divisi kami masing-masing. Namun, di sela-sela waktu yang terbatas, kami mulai berbicara, berdiskusi, dan menemukan kenyamanan dalam setiap kata yang terucap.'
+      text: 'Pada awal tahun 2024, tanpa sengaja kami dipertemukan dalam suatu kegiatan organisas, sebuah pertemuan sederhana yang saat itu belum kami sadari akan menjadi awal dari kisah yang begitu berarti. Hari demi hari kami lalui bersama sebagai rekan, saling mengenal melalui cerita, tawa, dan berbagai momen yang menguatkan kedekatan di antara kami. Waktu perlahan membawa kami pada pemahaman bahwa ada rasa yang tumbuh di antara kebersamaan itu.'
     },
     {
       chapter: 'CHAPTER TWO',
       title: 'Menjalin Hubungan',
-      text: 'Waktu pun berlalu, dan hubungan kami berkembang, dari sekadar teman menjadi sebuah ikatan cinta yang tak terucapkan. Bersama, kami melalui suka dan duka, menjalani setiap liku dengan tangan yang saling menggenggam, memperkuat ikatan yang kami bangun. Sejak tahun 2021, Dawud semakin dekat dengan keluarga Dira.'
+      text: 'Hingga pada tahun 2025, kami memutuskan untuk menjalin hubungan dan melangkah bersama dalam cerita yang lebih indah. Perjalanan kami tidak selalu mudah, namun setiap proses mengajarkan arti saling percaya, memahami, dan menguatkan.'
     },
     {
       chapter: 'CHAPTER THREE',
       title: 'Lamaran',
-      text: 'Pada Desember 2024, di tengah perjalanan cinta kami, Dawud melamar Dira, mengukir janji yang lebih dari sekadar kata. Kini, di tahun 2025, dengan segala usaha dan pengorbanan yang telah kami jalani bersama, kami siap melangkah ke pelaminan. Kami akan merayakan cinta yang telah tumbuh lama.'
+      text: 'Dengan penuh rasa syukur atas setiap langkah yang telah dilewati, di tahun 2026 kami memantapkan hati untuk membawa hubungan ini ke jenjang yang lebih serius, memulai babak baru dalam ikatan suci pernikahan, dengan harapan cinta ini terus tumbuh dan menjadi awal kebahagiaan sepanjang hayat.'
     },
   ];
 
@@ -581,6 +583,7 @@ const SectionEvent = () => (
 );
 
 const SectionGallery = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
   const images = [
     '/AXA02556.webp', '/AXA02547.webp', '/AXA02740.webp', '/AXA02542.webp',
     '/AXA02535.webp', '/AXA02594.webp', '/AXA02631.webp', '/AXA02997.webp',
@@ -598,6 +601,12 @@ const SectionGallery = () => {
         >
           OUR MOMENT
         </motion.h2>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="section-sub-title">“And I’d choose you; in a hundred lifetimes, in a hundred worlds, in any version of reality, I’d find you and I’d choose you.”</motion.h3>
         <div className="gallery-layout">
           {images.reduce((rows, _, index) => {
             if (index % 3 === 0) {
@@ -609,23 +618,54 @@ const SectionGallery = () => {
               key={rowIndex}
               className={`gallery-row ${rowIndex % 2 === 0 ? 'normal' : 'reverse'}`}
             >
-              <div className="big-image">
+              <div className="big-image" onClick={() => setSelectedImg(group[0])}>
                 <img src={group[0]} alt="" />
               </div>
               <div className="stack-column">
-                <div className="small-image">
+                <div className="small-image" onClick={() => setSelectedImg(group[1])}>
                   <img src={group[1]} alt="" />
                 </div>
 
-                <div className="small-image">
+                <div className="small-image" onClick={() => setSelectedImg(group[2])}>
                   <img src={group[2]} alt="" />
                 </div>
               </div>
             </div>
           ))}
-          <img src="/AXA02520.webp" alt='' />
+          <div className="bottom-image-wrapper" onClick={() => setSelectedImg('/AXA02520.webp')}>
+            <img src="/AXA02520.webp" alt="" />
+          </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {selectedImg && (
+          <motion.div
+            className="gallery-modal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImg(null)}
+          >
+            <motion.button
+              className="modal-close"
+              onClick={() => setSelectedImg(null)}
+            >
+              <X size={32} />
+            </motion.button>
+            <motion.div
+              className="modal-content"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img src={selectedImg} alt="Gallery Full" />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
@@ -633,14 +673,14 @@ const SectionGallery = () => {
 const SectionGift = () => {
   const accounts = [
     {
-      bank: "BCA",
-      number: "4741128033",
-      name: "Dira",
+      bank: "MANDIRI",
+      number: "1640006828604",
+      name: "Adira Fadhla Ramadha",
     },
     {
-      bank: "MANDIRI",
-      number: "1760003014220",
-      name: "Dawud",
+      bank: "BCA",
+      number: "7655661361",
+      name: "Dawud Al Ubaidah",
     },
   ];
   const [copied, setCopied] = useState("");
@@ -698,33 +738,6 @@ const SectionGift = () => {
   );
 }
 
-
-// const SectionSouvenir = () => (
-//   <section id="souvenir" className="section-souvenir">
-//     <div className="container">
-//       <motion.h2
-//         initial={{ opacity: 0 }}
-//         whileInView={{ opacity: 1 }}
-//         viewport={{ once: true }}
-//         className="section-title"
-//       >
-//         SOUVENIR CARD
-//       </motion.h2>
-//       <motion.div
-//         className="souvenir-card glass"
-//         initial={{ opacity: 0, scale: 0.9 }}
-//         whileInView={{ opacity: 1, scale: 1 }}
-//         viewport={{ once: true }}
-//         style={{ padding: '40px', textAlign: 'center', borderRadius: '20px' }}
-//       >
-//         <p style={{ opacity: 0.8, lineHeight: '1.8' }}>
-//           Terima kasih telah memberikan tanda kasih Anda. <br />
-//           Anda dapat menukarkan tanda kasih ini dengan souvenir di lokasi acara.
-//         </p>
-//       </motion.div>
-//     </div>
-//   </section>
-// );
 
 const SectionFooter = () => (
   <section className="section-footer">
