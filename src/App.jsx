@@ -99,7 +99,7 @@ const App = () => {
                 >
                   <p className="to-label">Yth. Bapak/Ibu/Sudara/i</p>
 
-                  <h2 className="guest-name">{guestName}</h2>
+                  <h2 className="guest-name">  {decodeURIComponent(guestName)}</h2>
 
                   <p className="invite-text">
                     Dengan segala hormat, kami mengundang Anda untuk menghadiri acara
