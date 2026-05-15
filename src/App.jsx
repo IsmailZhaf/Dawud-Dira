@@ -423,7 +423,7 @@ const SectionStory = () => {
     {
       chapter: 'CHAPTER ONE',
       title: 'Awal Bertemu',
-      text: 'Pada awal tahun 2024, tanpa sengaja kami dipertemukan dalam suatu kegiatan organisas, sebuah pertemuan sederhana yang saat itu belum kami sadari akan menjadi awal dari kisah yang begitu berarti. Hari demi hari kami lalui bersama sebagai rekan, saling mengenal melalui cerita, tawa, dan berbagai momen yang menguatkan kedekatan di antara kami. Waktu perlahan membawa kami pada pemahaman bahwa ada rasa yang tumbuh di antara kebersamaan itu.'
+      text: 'Pada awal tahun 2024, tanpa sengaja kami dipertemukan dalam suatu kegiatan organisasi, sebuah pertemuan sederhana yang saat itu belum kami sadari akan menjadi awal dari kisah yang begitu berarti. Hari demi hari kami lalui bersama sebagai rekan, saling mengenal melalui cerita, tawa, dan berbagai momen yang menguatkan kedekatan di antara kami. Waktu perlahan membawa kami pada pemahaman bahwa ada rasa yang tumbuh di antara kebersamaan itu.'
     },
     {
       chapter: 'CHAPTER TWO',
