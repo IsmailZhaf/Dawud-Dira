@@ -541,7 +541,7 @@ const SectionEvent = () => (
             <p className="date">Sabtu, 06 Juni 2026</p>
             <p className="time">09.00 - 11.00 WIB</p>
             <p className="venue">Gedung Pertemuan Duta Sinar Berkah</p>
-            <p className="address">Jl. Dr Cipto Mangunkusumo No. 24 (H Mencong) Kel. Sudimara Timur, Kec. Ciledug, Kota Tangerang, Banten.</p>
+            <p className="address">Jl. Dr Cipto Mangunkusumo No. 24 <br />(H Mencong) Kel. Sudimara Timur, Kec. Ciledug, Kota Tangerang, Banten.</p>
           </div>
           <a
             className="map-button"
@@ -566,7 +566,7 @@ const SectionEvent = () => (
             <p className="date">Sabtu, 06 Juni 2026</p>
             <p className="time">12.00 - 15.00 WIB</p>
             <p className="venue">Gedung Pertemuan Duta Sinar Berkah</p>
-            <p className="address">Jl. Dr Cipto Mangunkusumo No. 24 (H Mencong) Kel. Sudimara Timur, Kec. Ciledug, Kota Tangerang, Banten.</p>
+            <p className="address">Jl. Dr Cipto Mangunkusumo No. 24 <br /> (H Mencong) Kel. Sudimara Timur, Kec. Ciledug, Kota Tangerang, Banten.</p>
           </div>
           <a
             className="map-button"
