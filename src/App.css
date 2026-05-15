@@ -702,6 +702,7 @@ section {
   font-size: 0.75rem;
   letter-spacing: 0.3em;
   margin-bottom: 1rem;
+  color: var(--accent-gold);
 }
 
 .event-card h3 {
@@ -709,6 +710,11 @@ section {
   margin-bottom: 1.5rem;
   letter-spacing: 0.2em;
   text-transform: none;
+}
+
+.date,
+.time {
+  color: var(--accent-gold);
 }
 
 .event-card .date,
